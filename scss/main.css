@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+@-webkit-keyframes flutuar {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes flutuar {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card {
+  background-color: hsl(214deg, 17%, 16%);
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+main .card .image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(211, 211, 211, 0.05);
+  margin-bottom: 23px;
+}
+main .card .image img {
+  width: 18px;
+  background-color: rgba(211, 211, 211, 0.05);
+  border-radius: 50%;
+  -webkit-animation: flutuar 2s infinite;
+          animation: flutuar 2s infinite;
+}
+main .card .card-h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .card .card-p {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+main .card .btn-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+main .card .btn-card .btn-card-1 {
+  width: 50px;
+  height: 50px;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.05);
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .card .btn-card .btn-card-1:hover {
+  transform: scale(1.06);
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .card .submit {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 40px;
+  height: 43px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .card .submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  transform: scale(1.07);
+}
+main .active {
+  display: none;
+}
+main .card-2 {
+  background-color: hsl(214deg, 17%, 16%);
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  padding: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+main .card-2 img {
+  margin-top: 20px;
+  width: 177px;
+  margin-bottom: 30px;
+}
+main .card-2 .thanks-p {
+  color: hsl(25deg, 97%, 53%);
+  line-height: 31px;
+  text-align: center;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.05);
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main .card-2 .thanks-h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .card-2 .thanks-p2 {
+  text-align: center;
+  width: 366px;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+}
+main .active-2 {
+  display: flex;
+}
+@media (min-width: 1800px) {
+  main .card {
+    height: 464px;
+    padding: 22px;
+  }
+  main .card .image {
+    height: 55px;
+    width: 55px;
+  }
+  main .card .image img {
+    width: 45px;
+  }
+  main .card .card-h1 {
+    font-size: 40px;
+  }
+  main .card .card-p {
+    font-size: 22px;
+  }
+  main .card .btn-card .btn-card-1 {
+    width: 65px;
+    height: 65px;
+  }
+  main .card-2 {
+    height: 464px;
+    padding: 22px;
+  }
+  main .card-2 img {
+    width: 211px;
+  }
+  main .card-2 .thanks-p {
+    line-height: 53px;
+    width: 268px;
+    font-size: 23px;
+  }
+  main .card-2 .thanks-h1 {
+    font-size: 39px;
+  }
+  main .card-2 .thanks-p2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  main {
+    padding: 5px;
+  }
+}/*# sourceMappingURL=main.css.map */
