@@ -34,8 +34,8 @@ Desktop design
 
 ### Links
 
-- Solution URL: [Interactive rating component solution]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Interactive rating component solution](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-bYKFfhaP65)
+- Live Site URL: [Add live site URL here](https://jpbyte.github.io/interactive-rating-component-main/)
 
 ## My process
 
